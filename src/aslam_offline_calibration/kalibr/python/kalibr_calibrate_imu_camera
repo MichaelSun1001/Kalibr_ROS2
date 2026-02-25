@@ -1,5 +1,15 @@
 #!/usr/bin/env python3
 print("importing libraries")
+
+import site
+import sys
+
+# Keep user packages available (e.g. igraph) but prefer system matplotlib/numpy.
+user_site = site.getusersitepackages()
+if user_site in sys.path:
+    sys.path.remove(user_site)
+    sys.path.append(user_site)
+
 import sm
 import kalibr_common as kc
 from kalibr_imu_camera_calibration import *
@@ -7,7 +17,6 @@ from kalibr_imu_camera_calibration import *
 import numpy as np
 import argparse
 import signal
-import sys
 import os
 
 # make numpy print prettier

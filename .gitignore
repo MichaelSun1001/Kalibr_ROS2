@@ -87,3 +87,9 @@ CATKIN_IGNORE
 *.db3
 *.mcap
 *.orig
+
+# =========================
+# Data / runtime outputs
+# =========================
+cam_april*
+imu_april*
