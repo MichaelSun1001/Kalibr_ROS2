@@ -1,4 +1,8 @@
 
+# Introduction
+
+This repository is a ROS 2 port of Kalibr. It provides ROS 2 compatibility and workflow integration while preserving the original Kalibr calibration methods. No fundamental algorithmic changes have been made.
+
 # Build all packages
 
 ```bash
