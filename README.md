@@ -1,4 +1,8 @@
 
+# Introduction
+
+This repository is a ROS 2 port of Kalibr. It is intended to provide ROS 2 compatibility and workflow integration while preserving the original Kalibr calibration methods. No fundamental algorithmic changes have been made.
+
 # Build all packages
 
 ```bash
@@ -82,3 +86,13 @@ ros2 launch kalibr calibrate_cameras.launch.py --show-args
 ros2 launch kalibr calibrate_imu_camera.launch.py --show-args
 ros2 launch kalibr calibrate_multi_imu.launch.py --show-args
 ```
+
+# Acknowledgements
+
+Special thanks to the original Kalibr project and its contributors for the foundational work and open-source release:
+
+- [ETH Zurich ASL Kalibr repository](https://github.com/ethz-asl/kalibr)
+
+This repository is also informed by the following review paper on wide-angle camera calibration:
+
+- [*Geometric Wide-Angle Camera Calibration: A Review and Comparative Study* (arXiv)](https://arxiv.org/abs/2306.09014v2)
