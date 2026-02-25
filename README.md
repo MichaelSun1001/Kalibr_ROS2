@@ -36,17 +36,17 @@ ros2 run kalibr kalibr_calibrate_imu_camera \
 	--cam cam_april-camchain.yaml \
 	--bag imu_april
 
-# 其他
-## 先看这个包有哪些可执行入口
+# Additional Commands
+## List Available Kalibr Executables
 source install/setup.bash
 ros2 pkg executables kalibr
-## run 方式参数
+## Show `ros2 run` Help
 source install/setup.bash
 ros2 run kalibr kalibr_calibrate_cameras --help
 
 source install/setup.bash
 ros2 run kalibr kalibr_calibrate_imu_camera --help
-## launch 方式参数
+## Show `ros2 launch` Arguments
 ros2 launch kalibr calibrate_cameras.launch.py --show-args
 ros2 launch kalibr calibrate_imu_camera.launch.py --show-args
 ros2 launch kalibr calibrate_multi_imu.launch.py --show-args
